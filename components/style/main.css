@@ -1,0 +1,8 @@
+:root {
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Space Grotesk", serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

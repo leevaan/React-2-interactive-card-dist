@@ -1,0 +1,98 @@
+aside {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  max-width: 541px;
+  width: 100%;
+  margin-bottom: 30px;
+  user-select: none;
+}
+.cardFront,
+.cardBack {
+  position: relative;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 286px-451px__600vw - 375vw */
+  width: clamp(15.889rem, 0.611rem + 73.333vw, 25.056rem);
+
+  /* 157px-241px__600vw - 375vw */
+  height: clamp(8.722rem, 0.944rem + 37.333vw, 13.389rem);
+}
+.cardFront {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* 32px-20px__600vw - 375vw */
+  padding: clamp(1.111rem, 0rem + 5.333vw, 1.778rem);
+  z-index: 1;
+}
+.cardFrontNumber {
+  /* 18px-28px__600vw - 375vw */
+  font-size: clamp(1rem, 0.074rem + 4.444vw, 1.556rem);
+}
+.cardFrontInfo > span,
+.cardBackNumber > span {
+  /* 1.286px-2px__600vw - 375vw */
+  letter-spacing: clamp(0.071rem, 0.005rem + 0.317vw, 0.111rem);
+  /* 9px-14px__600vw - 375vw */
+  font-size: clamp(0.5rem, 0.037rem + 2.222vw, 0.778rem);
+}
+.cardFrontInfo > span {
+  text-transform: uppercase;
+}
+.cardFrontInfo {
+  margin-top: 25.5px;
+  display: flex;
+  justify-content: space-between;
+}
+.cardBack {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: flex-end;
+  /* 37px-57px__600vw - 375vw */
+  padding-right: clamp(2.056rem, 0.204rem + 8.889vw, 3.167rem);
+}
+.cardBackNumber {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 361px;
+  width: 100%;
+  height: 38px;
+}
+
+.cardBack > img,
+.cardFront > img {
+  position: absolute;
+  max-width: 100%;
+  /* 157px-241px__600vw - 375vw */
+  height: clamp(8.722rem, 0.944rem + 37.333vw, 13.389rem);
+  z-index: -1;
+}
+.cardFront > img {
+  top: 0px;
+  left: 0px;
+}
+.cardBack > img {
+  top: 0px;
+  left: 0px;
+}
+@media only screen and (max-width: 900px) {
+  aside {
+    position: relative;
+    gap: 0;
+    /* 246px-378px__600vw - 375vw */
+    height: clamp(13.667rem, 1.444rem + 58.667vw, 21rem);
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .cardFront {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+  }
+}

@@ -1,0 +1,99 @@
+/* ========  MINE ================= */
+.Mmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 381px;
+  width: 100%;
+}
+form {
+  color: #21092f;
+  width: 100%;
+}
+form label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+form label {
+  display: inline-block;
+  /* 20 px-26 px__600vw - 375vw */
+  margin-top: clamp(1.111rem, 0.556rem + 2.667vw, 1.444rem);
+  margin-top: 15px;
+  user-select: none;
+}
+
+form input {
+  width: 100%;
+  height: 45px;
+  border-radius: 8px;
+  border: 1px solid #dfdee0;
+  transition: border-color 0.5s ease;
+  margin-top: 9px;
+  padding-left: 16px;
+  cursor: pointer;
+  /* text-align: left; */
+}
+form input:hover:not(.submit) {
+  border: 1px solid #6348fe;
+  cursor: pointer;
+  transition: 1s;
+}
+::placeholder {
+  color: rgba(33, 9, 47, 1);
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.25;
+  font-size: 18px;
+  text-align: left;
+  /* padding-left: 16px; */
+}
+form span {
+  /* opacity: 0; */
+  transition: opacity 0.5s ease-in-out;
+  color: #ff5050;
+  font-size: 12px;
+  margin-top: 8px;
+  user-select: none;
+}
+.alertTxt {
+  display: flex;
+}
+.cardBackInfo > div {
+  display: flex;
+}
+.expDateMM,
+.expDateYY {
+  /* text-align: center; */
+  width: 80px;
+}
+.submit {
+  border-color: transparent;
+  /* 28 px-40 px__908vw - 375vw */
+  margin-top: clamp(1.556rem, 1.087rem + 2.251vw, 2.222rem);
+  border-radius: 8px;
+  background-color: rgba(33, 9, 47, 1);
+  color: #fff;
+  font-size: 18px;
+}
+.submit:hover {
+  opacity: 0.9;
+}
+.expDateMM {
+  /* 8 px-10 px__908vw - 375vw */
+  margin-right: clamp(0.444rem, 0.366rem + 0.375vw, 0.556rem);
+}
+.expDateYY {
+  /* 11 px-20 px__908vw - 375vw */
+  margin-right: clamp(0.611rem, 0.259rem + 1.689vw, 1.111rem);
+}
+
+@media only screen and (max-width: 900px) {
+  .submit {
+    margin-bottom: 30px;
+  }
+}
+/* automatautomatic payments methods filling is disabled because this form does not use a source connectionic payiments methods filling is disaled  becouse this form dose not use a source connection */
